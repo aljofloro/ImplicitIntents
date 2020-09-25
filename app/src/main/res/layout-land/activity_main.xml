@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <ImageView
+    android:id="@+id/iv_picture"
+    android:layout_width="192dp"
+    android:layout_height="215dp"
+    android:contentDescription="@string/custom_camera"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.374"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.454"
+    tools:srcCompat="@tools:sample/avatars" />
+
+  <Button
+    android:id="@+id/btn_camera"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:drawableStart="@android:drawable/ic_menu_camera"
+    android:text="@string/custom_camera"
+    app:layout_constraintBottom_toTopOf="@+id/btn_web"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.758"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.573" />
+
+  <Button
+    android:id="@+id/btn_location"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:drawableStart="@android:drawable/ic_menu_myplaces"
+    android:text="@string/custom_location"
+    app:layout_constraintBottom_toTopOf="@+id/btn_call"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.662"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.891" />
+
+  <Button
+    android:id="@+id/btn_web"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:drawableStart="@android:drawable/ic_menu_search"
+    android:text="@string/custom_web"
+    app:layout_constraintBottom_toTopOf="@+id/btn_location"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.679"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.835" />
+
+  <Button
+    android:id="@+id/btn_call"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableStart="@android:drawable/ic_menu_call"
+    android:text="@string/custom_call"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.669"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.872" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
